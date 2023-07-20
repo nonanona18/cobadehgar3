@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:id="@+id/Dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:text="@string/dashtitle"
+        android:textColor="@color/colorPrimaryVariant"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="226dp"
+        android:layout_height="231dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/img_4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dashboard" />
+
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/statusdeclaration"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+        app:layout_constraintStart_toStartOf="@+id/progressBar2"
+        app:layout_constraintTop_toTopOf="@+id/progressBar2"
+        app:layout_constraintVertical_bias="0.5" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/backgrounddash"
+        android:src="@drawable/white_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+        app:layout_constraintVertical_bias="0.0" />
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="333dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.15">
+            <TextView
+                android:id="@+id/aqilevel"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/container_dash"
+                android:scaleType="fitXY"
+                android:text="@string/aqiinfo"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                app:layout_column="1" />
+            <TextView
+                android:id="@+id/pm10"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/container_dash"
+                android:scaleType="fitXY"
+                android:text="@string/pminfo"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="30sp"
+                app:layout_column="3" />
+        </androidx.gridlayout.widget.GridLayout>
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+            app:layout_constraintVertical_bias="0.487">
+            <Button
+                android:id="@+id/btnon"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/container_light"
+                android:fontFamily="@font/croissant_one"
+                android:scaleType="fitXY"
+                android:text="@string/btnon"
+                app:layout_column="0" />
+            <Button
+                android:id="@+id/btnoff"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/container_light"
+                android:fontFamily="@font/croissant_one"
+                android:scaleType="fitXY"
+                android:text="@string/btnoff"
+                app:layout_column="1" />
+            <Button
+                android:id="@+id/btnuto"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/container_light"
+                android:fontFamily="@font/croissant_one"
+                android:scaleType="fitXY"
+                android:text="@string/btnauto"
+                app:layout_column="2" />
+        </androidx.gridlayout.widget.GridLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="332dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

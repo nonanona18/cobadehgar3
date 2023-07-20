@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_bold</item>
+        <item>@font/amaranth_bold</item>
+        <item>@font/barlow_thin</item>
+        <item>@font/bellefair</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/concert_one</item>
+        <item>@font/croissant_one</item>
+        <item>@font/inter_bold</item>
+        <item>@font/inter_light</item>
+        <item>@font/inter_medium</item>
+        <item>@font/inter_semibold</item>
+    </array>
+</resources>

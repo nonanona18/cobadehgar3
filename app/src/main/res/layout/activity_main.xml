@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        android:layout_marginTop="131dp"
+        android:clipToOutline="true"
+        android:background="@drawable/img"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:textAlignment="center"
+        android:text="@string/judul"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/signupButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_3"
+        android:fontFamily="@font/inter_semibold"
+        android:onClick="HandleExplicit"
+        android:text="@string/daftar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_3"
+        android:fontFamily="@font/inter_semibold"
+        android:onClick="HandleExplicit"
+        android:shadowColor="#0F0F0F"
+        android:text="@string/masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+</LinearLayout>
